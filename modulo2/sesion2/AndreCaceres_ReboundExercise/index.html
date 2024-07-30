@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div 
+    style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    "
+    >
+    <h1>FORMULARIO</h1>
+    <form action="greetings.html"
+    >
+    <label for="nombre">NOMBRE</label>
+    <br>
+    <input type="text" name="nombre" id="nombre" required>
+    <br>
+    <br>
+    <label for="direccion">DIRECCIÓN</label>
+    <br>
+    <input type="text" name="direccion" id="direccion">
+    <br><br>
+    <label for="lista">ESPECIALIDAD MEDICA</label>
+    <br>
+    <input type="text" name="lista" list="colores">
+    <datalist id="colores">
+        <option label="MEDICINA INTERNA" value="rojo">MEDICINA INTERNA</option>
+        <option value="medicina general">MEDICINA GENERAL</option>
+        <option value="traumatologia">TRAUMATOLOGIA</option>
+        <option value="nutricionista">NUTRICIONISTA</option>
+    </datalist>
+    <br><br>
+    <label for="fecha">FECHA</label>
+    <br>
+    <input type="date" name="fecha" id="fecha">
+    <br><br>
+    <label for="hora">HORA</label>
+    <br>
+    <input type="time" name="hora" id="hora">
+    <br><br>
+    <label for="correo">CORREO</label>
+    <br>
+    <input type="email" name="correo" id="correo">
+    <br><br>
+    <button>CONFIRMAR</button>
+</form>
+
+</div>
+</body>
+</html>
