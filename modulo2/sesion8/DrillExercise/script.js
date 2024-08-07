@@ -48,8 +48,6 @@ for (x of clientes){
                     clienteRegistrado.saldo += parseInt(deposito)
                     alert(`Deposito realizado. Su nuevo saldo es ${clienteRegistrado.saldo}`)
                     break
-                case 4:
-                    break
             }
         }
         while(opcion !== 4)
