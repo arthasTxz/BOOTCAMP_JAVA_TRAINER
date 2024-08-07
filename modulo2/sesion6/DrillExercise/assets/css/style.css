@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#jumbotron {
+    background-color: #62DAD3;
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+#nav-bar {
+    background-color: #051B54;
+    color: red;
+}
+
+#jumbotron img {
+    max-width: 50%;
+    height: auto;
+}
+
+#form {
+    color: #051B54;
+}
