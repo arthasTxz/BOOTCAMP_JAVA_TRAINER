@@ -1,0 +1,123 @@
+
+.jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.jumbotron img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.jumbotron .text-container {
+    max-width: 50%;
+}
+
+#home {
+    min-height: 100vh;  /* Ocupa toda la altura de la pantalla */
+    /* background: url('/portfolio/assets/img/polynesia.jpg') no-repeat center center/cover; */
+    /* color: white; */
+    display: flex;
+    
+}
+
+.card{
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.jumbotron .text-container {
+    max-width: 50%;
+}
+
+.project-box>i{
+    font-size: 50px;
+    color: #00B5E7;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.projects {
+    
+    padding-top: 50px;
+    height: 140vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+            
+    padding: 20px;
+}
+
+.projects {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact {
+   
+    align-items: center;
+}
+
+ /* Estilos Responsivos */
+ @media (max-width: 992px) {
+    .project-card {
+        flex: 0 0 calc(50% - 40px); /* Dos tarjetas por fila en tabletas */
+    }
+}
+
+@media (max-width: 576px) {
+    .project-card {
+        flex: 0 0 calc(100% - 40px); /* Una tarjeta por fila en móviles */
+    }
+
+    .contact {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+    #home{
+        display: block;
+    }
+
+    
+
+    .projects{
+        
+        padding: 10px; /* Reducir el padding para aprovechar mejor el espacio */
+    }
+
+    .project-card {
+        font-size: 1.5rem; /* Ajustar el tamaño de fuente del título */
+    }
+
+    .projects-container {
+        gap: 10px; /* Reducir el espacio entre las tarjetas */
+    }
+
+    .project-card {
+        padding: 15px; /* Reducir el padding dentro de las tarjetas */
+        
+        flex: 0 0 calc(100% - 30px); /* Ajustar el ancho de las tarjetas */
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem; /* Ajustar el tamaño de fuente del título de los proyectos */
+    }
+
+    
+}
